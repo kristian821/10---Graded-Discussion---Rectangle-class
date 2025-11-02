@@ -28,10 +28,28 @@
 //
 
 #include <iostream>
+#include "Rectangle.h"
 using namespace std;
 
 int main()
 {
+    double number;
+    Rectangle *square = nullptr;
+    
+    cout << "Enter the width: " << endl;
+    cin >> number;
+    square->setWidth(number);
+    
+    cout << "Enter the length: " << endl;
+    cin >> number;
+    square->setLength(number);
+    
+    cout << "Width: " << square->getWidth() << endl;
+    cout << "Length: " << square->getLength() << endl;
+    cout << "Area: " << square->getArea() << endl;
+    cout << "Perimeter: " << square->getPerimeter() << endl;
+    cout << "Square: " << square->isSquare() << endl;
+    
     
     return 0;
 }
