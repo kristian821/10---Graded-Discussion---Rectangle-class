@@ -35,6 +35,7 @@ int main()
 {
     double number;
     Rectangle *square = nullptr;
+    square = new Rectangle;
     
     cout << "Enter the width: " << endl;
     cin >> number;
@@ -50,6 +51,8 @@ int main()
     cout << "Perimeter: " << square->getPerimeter() << endl;
     cout << "Square: " << square->isSquare() << endl;
     
+    delete square;
+    square = nullptr;
     
     return 0;
 }
