@@ -37,19 +37,28 @@ int main()
     Rectangle *square = nullptr;
     square = new Rectangle;
     
-    cout << "Enter the width: " << endl;
+    cout << "Enter the width: ";
     cin >> number;
+    cout << endl;
     square->setWidth(number);
     
-    cout << "Enter the length: " << endl;
-    cin >> number;
+    cout << "Enter the length: ";
+    cin >> number;cout << endl;
     square->setLength(number);
     
     cout << "Width: " << square->getWidth() << endl;
     cout << "Length: " << square->getLength() << endl;
     cout << "Area: " << square->getArea() << endl;
     cout << "Perimeter: " << square->getPerimeter() << endl;
-    cout << "Square: " << square->isSquare() << endl;
+    cout << "Square: ";
+    if (square->isSquare() == 1)
+    {
+        cout << "True" << endl;
+    }
+    else
+    {
+        cout << "False" << endl;
+    }
     
     delete square;
     square = nullptr;
